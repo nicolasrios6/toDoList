@@ -1,0 +1,59 @@
+.todo {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.todoInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        margin-block: .5rem;
+        cursor: pointer;
+    }
+
+    &__btns {
+        .btnEdit {
+            margin-right: .5rem;
+            font-size: 1rem;
+            padding: .5rem;
+            border: none;
+            color: #61DAFB;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .btnDelete {
+            @extend .btnEdit;
+            color: red;
+        }
+
+    }
+
+    @media (max-width: 450px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+        align-items: flex-start;
+    }
+}
+
+.todoUpdateForm {
+    display: flex;
+    justify-content: space-between;
+
+    &__input {
+        font-size: 1rem;
+        padding: .3rem;
+    }
+
+    &__btn {
+        font-size: 1rem;
+        padding: .5rem;
+        border: none;
+        background-color: transparent;
+        color: green;
+        cursor: pointer;
+    }
+}
